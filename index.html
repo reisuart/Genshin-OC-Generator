@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width,height=device-height,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0"
+    />
+
+    <title>Genshin Impact OC Randomizer</title>
+    
+    
+    <meta name="theme-color" content="#F05365"/>
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Genshin Impact OC Randomizer" />
+    <meta property="og:description" content="A Simple website that allows you to generate basic information for your OC!"/>
+    <meta property="og:url" content="https://genshin-impact-oc-generator.glitch.me"/>
+    <meta property="og:image" content="" />
+
+    <link rel="stylesheet" href="./style.css" />
+    <script type="text/javascript" src="./script.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800;900&display=swap" rel="stylesheet"/>
+
+  </head>
+  <body>
+    <h1>
+      Genshin Impact OC Generator
+    </h1>
+    <h4>
+      Want to create an OC but don't know where to start from? Here, have some
+      randomness.
+    </h4>
+
+    <div class="shipcontainer">
+      <div id="RandomOC"></div>
+    </div>
+
+    <div class="tables-container">
+      <table class="stats">
+        <thead>
+          <tr>
+            <th colspan="3">Random OC Statistics</th>
+          </tr>
+        </thead>
+        <tr>
+          <th width="50%">Rarity</th>
+          <td width="45%"><div id="randomrarity"></div></td>
+          <td width="5%"><button class="short-random" onclick="ocrarity()">↺</button>
+        </tr>
+        <tr>
+          <th>Pronoun</th>
+          <td><div id="randomgender"></div></td>
+          <td><button class="short-random" onclick="ocgender()">↺</button>
+        </tr>
+        <tr>
+          <th>Element</th>
+          <td><div style="display: flex; align-items:center;" id="randomelement"></div></td>
+          <td><button class="short-random" onclick="ocelement()">↺</button>
+        </tr>
+        <tr>
+          <th>Weapon</th>
+          <td><div style="display: flex; align-items:center;" id="randomweapon"></div></td>
+          <td><button class="short-random" onclick="ocweapon()">↺</button>
+        </tr>
+        <tr>
+          <th>Role</th>
+          <td><div id="randomrole"></div></td>
+          <td><button class="short-random" onclick="ocrole()">↺</button>
+        </tr>
+        <tr>
+          <th>Nation</th>
+          <td><div id="randomnation"></div></td>
+          <td><button class="short-random" onclick="ocnation()">↺</button>
+        </tr>
+        <tr>
+          <td colspan="3">
+            <button onclick="oc()">
+              Randomize OC
+            </button>
+          </td>
+        </tr>
+      </table>
+
+      <table class="stats features">
+        <thead>
+          <tr>
+            <th colspan="3">Random OC Features</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th width="50%">Height</th>
+            <td width="45%"><div id="random-height"></div></td>
+            <td width="5%">
+              <button class="short-random" onclick="featuresheight()">↺</button>
+            </td>
+          </tr>
+          <tr>
+            <th>Skin Color</th>
+            <td><div id="random-skin-color"></div></td>
+            <td>
+              <button class="short-random" onclick="featuresskincolor()">
+                ↺
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <th>Eye Color</th>
+            <td><div id="random-eye-color"></div></td>
+            <td>
+              <button class="short-random" onclick="featureseyecolor()">
+                ↺
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <th>Hair Color</th>
+            <td><div id="random-hair-color"></div></td>
+            <td>
+              <button class="short-random" onclick="featureshaircolor()">
+                ↺
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <th>Hair Length</th>
+            <td><div id="random-hair-length"></div></td>
+            <td>
+              <button class="short-random" onclick="featureshairlength()">
+                ↺
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <th>Hair Type</th>
+            <td><div id="random-hair-type"></div></td>
+            <td><button class="short-random" onclick="featureshairtype()">↺</button>
+            </td>
+          </tr>
+          
+        <tr>
+          <td colspan="3">
+            <button onclick="features()">
+              Randomize Features
+            </button>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+
+      <div class="noready">
+        <h3>
+          Palette generator under construction
+        </h3>
+      </div>
+    
+
+    <!--
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <div class="PaletteContainer">
+      <div id="colorpad1"></div><div id="colorpad2"></div><div id="colorpad3"></div><div id="colorpad4"></div><div id="colorpad5"></div>
+    </div>
+    <button class="palettebtn" onclick="setRandomColor()">Random Palette</button>
+-->
+    <div class="copyright">
+      This generator was brought to you by
+      <a href="https://twitter.com/Reisu__art" target=”_blank”>Rei</a>.<br />If you want to share your results, post them on twitter tagging me "<a
+        href="https://twitter.com/Reisu__art" target=”_blank”>@Reisu__art</a>" and using the hashtag "<a href="https://twitter.com/hashtag/ReiGenshinOCGenerator?src=hashtag_click" target=”_blank”>#ReiGenshinOCGenerator</a
+      >"!
+    </div>
+      
+  </body>
+</html>

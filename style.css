@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --main-color: #F05365;
+  --main-rbg: 247, 181, 56;
+}
+
+body {
+  background-color: #1b1b1b;
+  margin: 30px;
+  font-family: "Montserrat";
+}
+
+h1 {
+  color: var(--main-color);
+  text-align: center;
+}
+
+h4 {
+  color: #8b8b8b;
+  text-align: center;
+  font-weight: 400 !important;
+  font-size: 12px;
+  margin: 10px 0 10px 0;
+}
+
+/* RANDOMIZER TABLE */
+
+.tables-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.stats {
+  width: 400px;
+  text-align: left;
+  border: 2px solid #333;
+  border-radius: 5px;
+  padding: 10px;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.stats thead th {
+  text-align: center;
+  font-size: 18px;
+  color: var(--main-color);
+}
+
+.stats td, .stats th {
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.stats button {
+  width: 100%;
+  color: black;
+  background-color: var(--main-color);
+  font-weight: 800;
+  font-family: "Montserrat";
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+}
+
+.stats .short-random {
+  padding: 2px !important;
+  padding-bottom: 3px !important;;
+}
+
+.features {
+  margin-left: 15px;
+}
+
+
+
+
+/* UNDER CONSTRUCTION */
+
+.noready {
+  background-color: #333;
+  padding: 10px;
+  border-radius: 5px;
+  color: #8b8b8b;
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.noready h3 {  
+  text-align: center;
+}
+
+/* PALETTE GENERATOR */
+
+.PaletteContainer {
+  margin: 10px 0;
+  padding: 10px 10px 7px 10px;
+  border: 2px solid #333;
+  border-radius: 5px;
+}
+
+.PaletteContainer div {
+  display: inline-block;
+  width: 20%;
+  height: 80px;
+  background-color: #000;
+}
+
+.PaletteContainer div:first-child {
+  border-radius: 3px 0 0 3px;
+}
+
+.PaletteContainer div:last-child {
+  border-radius: 0 3px 3px 0;
+}
+
+button {
+  padding: 5px;
+  border: none;
+  border-radius: 3px;
+}
+
+button svg {
+  width: 15px;
+  height: auto;
+  padding: 0px !important;
+}
+
+.copyright {
+  margin-top: 20px;
+  color: #8b8b8b;
+  font-size: 12px;
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.copyright a {
+  color: var(--main-color);
+  text-decoration: none;
+}
+
+
+@media (max-width: 920px) {
+  .stats {
+  width: 100%;
+  }
+    
+  .features {
+  margin-left: 0px;
+  }
+  
+  .flex div {
+  width: 100%;
+  }
+  
+  .noready {width: 80%; margin: none;}
+  
+  .noready h3 {font-size: 12px;}
+  
+  .copyright {width: 100%;}
+
+}
+
+@media (max-width: 800px) {
+}
