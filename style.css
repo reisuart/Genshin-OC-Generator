@@ -4,8 +4,8 @@
 }
 
 :root {
-  --main-color: #F05365;
-  --main-rbg: 247, 181, 56;
+  --main-color: #8C47C9;
+  --main-rbg: 140, 71, 201
 }
 
 body {
@@ -75,9 +75,6 @@ h4 {
 .features {
   margin-left: 15px;
 }
-
-
-
 
 /* UNDER CONSTRUCTION */
 
